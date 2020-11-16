@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header nav .logo {
+    font-family: 'Gill Sans Extrabold', fantasy;
+    font-size: 3rem;
+    text-align: center;
+    margin: 10 px;
+    text-transform: uppercase;
+}
+
+
+header nav .menu-items {
+    display: none;
+}
+
+header nav input:checked ~ .menu-items {
+    display: block;
+}
+
+header nav .menu-items a {
+    display: block;
+    text-decoration: none;
+    color: var(--main-color);
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 3px;
+}
+
+.menu-items a:hover { 
+    border-color: var(--accent-color);
+}
+
+
+@media (min-width: 769px) {
+
+    .burger-icon {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    header nav input:checked ~ .menu-items {
+        display: flex;
+    }
+
+    header nav .menu-items { 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+    }
+
+}
+
+header .banner {
+    background-image: url(logoRIO.jpg);
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.about-us{
+	
+    margin-top: 100px;
+	display: flex;
+	margin-left: 250px;
+    margin-right:250px;
+}
+
+.about-pic {	
+  display:inline-block
+
+}
+.about-pic img {
+  display:inline-block
+  width: 200px; 
+  height: 200px;
+  
+}
+
+.about-text {
+  display:inline-block
+  margin-left: 100px;
+}
+.about-text .section-title {
+  margin-bottom: 20px;
+}
+.about-text .section-title h2 {
+  font-weight: 600;
+}
+.about-text .section-title p {
+  font-size: 20px;
+  color: #191919;
+  line-height: 28px;
+  font-weight: 500;
+}
+.about-text p {
+  color: #6e6e6e;
+  line-height: 24px;
+}
+
+footer form {
+    margin: 10px;
+}
+
+footer form label {
+    display: inline-block;
+    min-width: 120px;
+}
